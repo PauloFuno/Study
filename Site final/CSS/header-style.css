@@ -1,0 +1,131 @@
+body {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: #FFF;
+}
+
+header {
+    width: 100vw;
+    background-color: #FFFFFF;
+    height: 20%;
+}
+
+/* Estilo do logo */
+#logo {
+    width: 80%;
+    height: 80%;
+    padding-top: 0.5em;
+}
+
+/* Estilo do container da navbar */
+#nav-bar {
+    margin: auto;
+}
+
+/* Estilo dos itens da navbar */
+#nav-bar a{
+    float: none;
+    display: inline-block;
+    font-size: 1rem;
+    color: #000000;
+    padding: 5% 0 !important;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+/* Define a largura dos itens maiores da navbar */
+.l-item {
+    width: 17% !important;
+}
+
+/* Define a largura dos itens menores da navbar */
+/* função principal dessa separação é evitar o máximo possível o clip das palavras */
+.s-item {
+    width: 14% !important;
+}
+
+/* Estilo dos itens da navbar ao passar o mouse encima */
+#nav-bar a:hover {
+    font-weight: bold;
+}
+
+/* Estilo do container do botão para abrir a sidebar */
+#container-btn-nav{
+    float: right;
+    height: 48px;
+    margin-right: 40px;
+}
+
+/* Estilo do botão para abrir a sidebar */
+.sidebar-btn {
+    color: #FFE747;
+    font-weight: bold;
+    padding: 0.3em;
+    font-size: 30px;
+    line-height: normal;
+    font-family: sans-serif;
+    height: 48px;
+}
+
+/* Evita que botão para abrir a sidebar mude de cor ao passar o mouse encima */
+.sidebar-btn:hover {
+    color: #FFE747 !important;
+}
+
+/* Estilo da sidebar */
+.sidebar {
+    float: right;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    background-color: #FFE218;
+    box-shadow:0 0 0 10000px Rgba(0,0,0,0.20);
+}
+
+/* Estilo do botão de fechar a sidebar */
+.sidebar-close-btn {
+    float: right !important;
+    line-height: normal;
+    font-family: sans-serif;
+    width: 32px !important;
+    height: 32px !important;
+    background: url('../Imagens/close.png') no-repeat;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+}
+
+/* Estilo dos itens da sidebar (página principal, etc) */
+.sidebar a {
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem 0 1rem 0 !important;
+    border-bottom: 2px solid #4E1877 !important;
+    margin: 0 5%;
+    width: 90% !important;
+    font-family: 'Kanit', sans-serif;
+    
+}
+
+/* Último item da sidebar não terá borda embaixo */
+.sidebar a:last-of-type {
+    border-bottom: none !important;
+}
+
+/* Efeito ao passa o mouse encima dos itens da sidebar (página principal, etc) */
+.sidebar a:hover {
+    color: #34104F !important;
+    font-weight: bold;
+}
+
+#banner-pagina-inicial {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#container-conteudo {
+    overflow: hidden;
+    padding: 0 !important;
+    max-height: 1150px;
+
+}

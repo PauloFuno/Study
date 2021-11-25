@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artes Nakayama</title>
+    <link rel="stylesheet" href="./CSS/w3.css">
+    <link rel="stylesheet" href="./CSS/header-style.css">
+    <link rel="stylesheet" href="./CSS/footer-style.css">
+    <link rel="stylesheet" href="./CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w3-container w3-row">
+        <!-- Div filler para ajustar posicionamento das colunas no header -->
+        <div class="w3-container w3-col" style="width: 7%;"></div>
+        <!-- Div do Logo -->
+        <a href="index.html"> 
+          <div  class="w3-col" style="width:10%">
+            <img id="logo" src="./Imagens/Logo_preto.png" alt="logo-enraizando-hair"> </a>
+        </div>
+
+        <!-- Div da navbar -->
+        <div class="w3-bar w3-col w3-right-align w3-hide-small" id="nav-bar" style="width:70%">
+            <a href="quem-somos.html" class="w3-bar-item w3-btn w3-mobile w3-hover-none l-item">Quem Somos</a>
+            <a href="produtos.html" class="w3-bar-item w3-btn w3-mobile w3-hover-none s-item">Produtos</a>
+            <a href="contatos.html" class="w3-bar-item w3-btn w3-mobile w3-hover-none s-item">Contatos</a>
+        </div>
+        <!-- div do botão da sidebar -->
+        <div class="w3-container w3-col" id="container-btn-nav" style="width: 1%;">
+            <button class="w3-button sidebar-btn w3-hover-none w3-hide-large w3-hide-medium"
+                onclick="w3_open()">&ctdot;</button>
+        </div>
+        <!-- div da sidebar -->
+        <div class="w3-hide-medium w3-hide-large sidebar w3-bar-block w3-collapse w3-card"
+            style="width:50%;right:0;display:none!important;" id="side-bar">
+            <button class="sidebar-close-btn w3-hover-none w3-bar-item w3-button w3-circle w3-xlarge w3-hide-large"
+                onclick="w3_close()"></button>
+            <a href="quem-somos.html" class="w3-bar-item w3-btn w3-mobile w3-hover-none">Quem Somos</a>
+            <a href="produtos.html" class="w3-bar-item w3-btn w3-mobile w3-hover-none">Produtos</a>
+            <a href="contatos.html" class="w3-bar-item w3-btn w3-mobile w3-hover-none">Contatos</a>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div id="banner-pagina-inicial" class="w3-container">
+        <img src="Imagens/banner_desktop.jpg" style="width: 100%;
+        height: 85%;
+        margin:0;
+        padding:0 !important" ;>
+    </div>
+    
+    <!-- Image + Text -->
+    <section class="w3-container w3-row container-conteudo">
+
+        <div class="w3-container w3-mobile w3-half div-conteudo4">
+            <img src="./Imagens/Image1.jpg"
+            style="margin-bottom: 7%;
+            width: 55%;
+            border-radius: 2%;">
+        </div>
+
+        <div class="w3-container w3-mobile w3-half div-conteudo4">
+
+            <h2>Feito com Amor</h2>
+
+            <h3>Em 2018 Comecei a postar trechos de músicas, frases motivacionais e bíblicas. O objetivo do perfil era
+                passar algo de bom para as pessoas. <br> Da mesma forma que encontrei paz, felicidade e calmaria nas
+                artes, eu também queria que as pessoas que olhassem para o que eu fizesse também pudessem sentir o mesmo.
+            </h3>
+            
+            <form action="quem-somos.html">
+                <button style="border: #fff;
+                background-color: #fff;
+                color: #DC8668;
+                font-size: 30px;
+                "> Veja mais -> </button>
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Sub Baner -->
+    <div id="SubBanner" class="w3-container">
+        <img src="Imagens/sub_ban_desktop.jpg" style="width: 100%;
+        height: 85%;
+        margin:0;
+        padding:0 !important" ;>
+    </div>
+
+    <!-- Text & Btn-->
+    <section class="w3-container w3-row div-conteudo6">
+
+        <h1>Quer ter uma arte personalizada para 
+            você, sua empresa ou comércio?  </h1>
+
+            <form action="https://google.com">
+                <button style="border: #fff;
+                background-color: #fff;
+                color: #DC8668;
+                font-size: 30px;
+                ">Entre em contato -></button>
+            </form>
+
+    </section>
+
+    <!-- Title -->
+    <div id="title_voces_por_aqui" class="w3-container">
+        <h7>Vocês por aqui</h7>
+    </div>
+    
+    <!-- Reviews -->
+    <section class="w3-container w3-row container-conteudo2">
+        
+        <div class="w3-container w3-mobile w3-third div-conteudo2">
+            <img src="Imagens/foto nany.png"
+                style="
+                    width: 50%;
+                    padding: 2%;
+                    margin-top: 5%;
+                    border-radius: 100%;
+            ">
+                    <h2>@nany.carvalho</h2>
+                        <h3>“Escolhi o Artes Nakayama, porque eu sei que tudo o que eu pedisse, ela iria fazer do 
+                            jeito que eu gosto e com amor, como tudo o que ela faz… Escolhi também para motivá-la, 
+                            incentivar, pois merece, tem talento, é dedicada, faz tudo com amor como eu já disse e 
+                            o mais importante, porque a amo.” </h3>
+
+        </div>
+        <div class="w3-container w3-mobile w3-third div-conteudo2">
+            <img src="Imagens/foto nany.png"
+                style="
+                    width: 50%;
+                    padding: 2%;
+                    margin-top: 5%;
+                    border-radius: 100%;
+            ">
+                    <h2>@nany.carvalho</h2>
+                    <h3>“Escolhi o Artes Nakayama, porque eu sei que tudo o que eu pedisse, ela iria fazer do 
+                        jeito que eu gosto e com amor, como tudo o que ela faz… Escolhi também para motivá-la, 
+                        incentivar, pois merece, tem talento, é dedicada, faz tudo com amor como eu já disse e 
+                        o mais importante, porque a amo.” </h3>
+
+        </div>
+        <div class="w3-container w3-mobile w3-third div-conteudo2">
+            <img src="Imagens/foto nany.png"
+                style="
+                    width: 50%;
+                    padding: 2%;
+                    margin-top: 5%;
+                    border-radius: 100%;
+            ">
+                    <h2>@nany.carvalho</h2>
+                    <h3>“Escolhi o Artes Nakayama, porque eu sei que tudo o que eu pedisse, ela iria fazer do 
+                        jeito que eu gosto e com amor, como tudo o que ela faz… Escolhi também para motivá-la, 
+                        incentivar, pois merece, tem talento, é dedicada, faz tudo com amor como eu já disse e 
+                        o mais importante, porque a amo.” </h3>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-row">
+        <div id="copyright-container" class="w3-col" style="width:65%">
+            <p class="w3-hide-small w3-mobile">Copyright © 2021 Artes Nakayama - Todos os direitos
+                reservados
+
+</p>
+            <p class="w3-hide-medium w3-hide-large mobile-text">Copyright © 2021 Artes Nakayama - Todos os direitos
+                reservados</p>
+        </div>
+
+        <div id="social-container" class="w3-col w3-hide-small" style="width:25%">
+            <img src="./Imagens/icon-instagram.png" alt="Icone Instagram">
+            <img src="./Imagens/icon-facebook.png" alt="Icone Facebook">
+            <img src="./Imagens/icon-pinterest.png" alt="Icone Pinterest">
+            <img src="./Imagens/icon-youtube.png" alt="Icone Youtube">
+        </div>
+
+        <div id="social-container-mobile" class="w3-col w3-hide-medium w3-hide-large" style="width:30%">
+            <img class="mobile-icon" src="./Imagens/icon-instagram.png" alt="Icone Instagram">
+            <img class="mobile-icon" src="./Imagens/icon-facebook.png" alt="Icone Facebook">
+            <img class="mobile-icon" src="./Imagens/icon-pinterest.png" alt="Icone Pinterest">
+            <img class="mobile-icon" src="./Imagens/icon-youtube.png" alt="Icone Youtube">
+        </div>
+    </footer>
+    <!-- script para mostrar/esconder sidebar quando apertar o botão -->
+    <script>
+        function w3_open() {
+            document.getElementById("side-bar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("side-bar").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

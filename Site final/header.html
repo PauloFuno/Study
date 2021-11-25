@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artes Nakayama</title>
+    <link rel="stylesheet" href="./CSS/w3.css">
+    <link rel="stylesheet" href="./CSS/header-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="w3-container w3-row">
+        <!-- Div filler para ajustar posicionamento das colunas no header -->
+        <div class="w3-container w3-col" style="width: 10%;"></div>
+        <!-- Div do Logo -->
+        <div class="w3-col" style="width:10%">
+            <img class="w3-image" id="logo" src="./Imagens/Logo_preto.png" alt="logo-enraizando-hair">
+        </div>
+        <!-- Div da navbar -->
+        <div class="w3-bar w3-col w3-right-align w3-hide-small" id="nav-bar" style="width:70%">
+            <a href="#" class="w3-bar-item w3-btn w3-mobile w3-hover-none l-item">Sobre</a>
+            <a href="#" class="w3-bar-item w3-btn w3-mobile w3-hover-none s-item">Produtos</a>
+            <a href="#" class="w3-bar-item w3-btn w3-mobile w3-hover-none s-item">Contatos</a>
+        </div>
+        <!-- div do botão da sidebar -->
+        <div class="w3-container w3-col" id="container-btn-nav" style="width: 1%;">
+            <button class="w3-button sidebar-btn w3-hover-none w3-hide-large w3-hide-medium"
+                onclick="w3_open()">&ctdot;</button>
+        </div>
+        <!-- div da sidebar -->
+        <div class="w3-hide-medium w3-hide-large sidebar w3-bar-block w3-collapse w3-card"
+            style="width:50%;right:0;display:none!important;" id="side-bar">
+            <button class="sidebar-close-btn w3-hover-none w3-bar-item w3-button w3-circle w3-xlarge w3-hide-large"
+                onclick="w3_close()"></button>
+            <a href="#" class="w3-bar-item w3-btn w3-mobile w3-hover-none">Sobre</a>
+            <a href="#" class="w3-bar-item w3-btn w3-mobile w3-hover-none">Produtos</a>
+            <a href="#" class="w3-bar-item w3-btn w3-mobile w3-hover-none">Contatos</a>
+        </div>
+    </header>
+    <!-- script para mostrar/esconder sidebar quando apertar o botão -->
+    <script>
+        function w3_open() {
+            document.getElementById("side-bar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("side-bar").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

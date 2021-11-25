@@ -1,0 +1,62 @@
+footer {
+    width: 100vw;
+    height: 7%;
+    background-color: #000;
+    align-content: center;
+    color: #FFf;
+    bottom: 0;
+    padding: 0 10px !important;
+}
+
+/* Estilo do container da mensagem de copyright */
+#copyright-container {
+    display: inline-block !important;
+    text-align: center;
+}
+
+/* Estilo da mensagem de copyright */
+#copyright-container p{
+    margin: 2vh 0;
+    white-space: normal;
+}
+
+/* Estilo adicional para mensagem de copyright versão mobile */
+.mobile-text {
+    font-size: 0.6em;
+    margin-top: 1vh !important;
+    margin-bottom: 1vh !important;
+}
+
+/* Estilo do container dos icones de rede social */
+#social-container {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: inline-block;
+    text-align: center;
+    margin-left: 3%;
+}
+
+/* Estilo dos icones de rede social */
+#social-container img {
+   margin-right: 3px;
+}
+
+/* Último icone não terá margem à direita */
+#social-container img:last-of-type {
+    margin-right: 0;
+ }
+
+/* Estilo do container dos icones de rede social, versão mobile */
+#social-container-mobile {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    display: inline-block;
+    text-align: center;
+    margin-left: 5%;
+}
+
+/* Estilos dos icones de rede social, versão mobile */
+.mobile-icon {
+    width: 20px;
+    height: 20px;
+}
